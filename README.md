@@ -4,6 +4,7 @@
 <p align="center">
   <a href="https://paypal.me/ago19800">
     <img src="https://img.shields.io/badge/PayPal-Support%20the%20project-00457C?logo=paypal&style=for-the-badge" alt="PayPal Donate">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/ago19800/Frigate_NVR_Auto_Installer" alt="License">
   </a>
 </p>
 Installazione automatica di [Frigate NVR](https://frigate.video) in un container LXC su Proxmox, con supporto Google Coral USB TPU, storage esterno e configurazione completa.
