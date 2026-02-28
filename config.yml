@@ -1,0 +1,80 @@
+# ============================================================
+#  Frigate NVR - Configurazione generata automaticamente
+#  Data: 2026-02-28 14:11:58
+# ============================================================
+
+mqtt:
+  enabled: false
+
+# ── Detector ───────────────────────────────────────────────
+detectors:
+  coral:
+    type: edgetpu
+    device: usb
+
+# ── Database ───────────────────────────────────────────────
+database:
+  path: /config/frigate.db
+
+# ── Registrazioni ──────────────────────────────────────────
+record:
+  enabled: true
+  sync_recordings: true
+  continuous:
+    days: 7          # registra sempre H24 per 7 giorni
+  motion:
+    days: 7          # registrazioni su movimento per 7 giorni
+  alerts:
+    retain:
+      days: 30
+      mode: motion
+  detections:
+    retain:
+      days: 7
+      mode: motion
+
+# ── Snapshot ───────────────────────────────────────────────
+snapshots:
+  enabled: true
+  retain:
+    default: 10
+
+# ── Oggetti da rilevare ────────────────────────────────────
+objects:
+  track:
+    - person
+    - car
+    - dog
+    - cat
+
+# ── FFmpeg ─────────────────────────────────────────────────
+ffmpeg:
+  hwaccel_args: []
+
+# ── Telecamere ─────────────────────────────────────────────
+# IMPORTANTE: Aggiungi le tue telecamere qui prima di avviare!
+# Esempio:
+
+#
+# Senza telecamere Frigate si avvia ma non fa nulla.
+# Modifica questo file e poi: docker compose restart
+cameras: 
+  giardindietro:
+    ffmpeg:
+      inputs:
+        - path: rtsp://admin:L2477E4C@192.168.1.36:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+        - path: rtsp://admin:L2477E4C@192.168.1.36:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+      output_args:
+        record: preset-record-generic-audio-aac
+    detect:
+      enabled: true
+      fps: 5
+      width: 640
+      height: 480
+    record:
+      enabled: true    # solo enabled, senza retain a livello camera
+version: 0.17-0
