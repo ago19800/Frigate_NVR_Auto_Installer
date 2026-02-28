@@ -1,7 +1,11 @@
 # 🦅 Frigate NVR — Auto Installer for Proxmox LXC
 
 > **Italiano 🇮🇹** | **English 🇬🇧**
-
+<p align="center">
+  <a href="https://paypal.me/ago19800">
+    <img src="https://img.shields.io/badge/PayPal-Support%20the%20project-00457C?logo=paypal&style=for-the-badge" alt="PayPal Donate">
+  </a>
+</p>
 Installazione automatica di [Frigate NVR](https://frigate.video) in un container LXC su Proxmox, con supporto Google Coral USB TPU, storage esterno e configurazione completa.
 
 Automatic installation of [Frigate NVR](https://frigate.video) inside a Proxmox LXC container, with Google Coral USB TPU support, external storage and full configuration.
@@ -467,7 +471,11 @@ docker image prune -f
 MIT License — Usa liberamente / Use freely
 
 ---
-
+<p align="center">
+  <a href="https://paypal.me/ago19800">
+    <img src="https://img.shields.io/badge/PayPal-Support%20the%20project-00457C?logo=paypal&style=for-the-badge" alt="PayPal Donate">
+  </a>
+</p>
 ## ⭐ Credits
 
 - [Frigate NVR](https://frigate.video) — Blake Blackshear
