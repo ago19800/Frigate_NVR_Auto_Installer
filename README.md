@@ -79,7 +79,7 @@ Automatically configures: container RAM/CPU, Coral USB passthrough, optional ext
 
 ```bash
 # Scarica / Download
-wget https://raw.githubusercontent.com/ago19800/frigate-lxc-installer/main/proxmox_setup.sh
+wget https://raw.githubusercontent.com/ago19800/Frigate_NVR_Auto_Installer/main/proxmox_setup.sh
 
 # Esegui / Run
 bash proxmox_setup.sh
@@ -115,7 +115,7 @@ Enter the container and run the installer.
 pct enter 103
 
 # Scarica lo script / Download script
-wget https://raw.githubusercontent.com/ago19800/frigate-lxc-installer/main/install_frigate.sh
+wget https://raw.githubusercontent.com/ago19800/Frigate_NVR_Auto_Installer/main/install_frigate.sh
 
 # Esegui / Run
 bash install_frigate.sh
