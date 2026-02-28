@@ -7,7 +7,9 @@ Installazione automatica di [Frigate NVR](https://frigate.video) in un container
 Automatic installation of [Frigate NVR](https://frigate.video) inside a Proxmox LXC container, with Google Coral USB TPU support, external storage and full configuration.
 
 ---
-
+> ![Screenshot proxmox_setup.sh](https://github.com/ago19800/Frigate_NVR_Auto_Installer/blob/main/images/2.jpg)
+> ![Screenshot proxmox_setup.sh](https://github.com/ago19800/Frigate_NVR_Auto_Installer/blob/main/images/3.jpg)
+> *Sostituisci questa immagine con lo screenshot reale / Replace with real screenshot*
 ## 📋 Indice / Table of Contents
 
 - [Requisiti / Requirements](#-requisiti--requirements)
@@ -97,7 +99,7 @@ bash proxmox_setup.sh
 | Configura disco esterno (opzionale) | Configure external disk (optional) |
 | Riavvia il container | Restart the container |
 
-> ![Screenshot proxmox_setup.sh](.github/images/proxmox_setup.png)
+> ![Screenshot proxmox_setup.sh](https://github.com/ago19800/Frigate_NVR_Auto_Installer/blob/main/images/5.jpg)
 > *Sostituisci questa immagine con lo screenshot reale / Replace with real screenshot*
 
 ---
@@ -131,7 +133,7 @@ bash install_frigate.sh
 | Versione Frigate | `stable` | stable / stable-tensorrt / dev | stable / stable-tensorrt / dev |
 | Avviare subito | `S` | Avvia Frigate al termine | Start Frigate when done |
 
-> ![Screenshot install_frigate.sh](.github/images/install_frigate.png)
+> ![Screenshot install_frigate.sh](https://github.com/ago19800/Frigate_NVR_Auto_Installer/blob/main/images/4.jpg)
 > *Sostituisci questa immagine con lo screenshot reale / Replace with real screenshot*
 
 ---
@@ -142,7 +144,7 @@ bash install_frigate.sh
 http://IP-CONTAINER:5000
 ```
 
-> ![Screenshot interfaccia Frigate](.github/images/frigate_ui.png)
+> ![Screenshot interfaccia Frigate](https://github.com/ago19800/Frigate_NVR_Auto_Installer/blob/main/images/1.jpg)
 > *Sostituisci questa immagine con lo screenshot reale / Replace with real screenshot*
 
 ---
